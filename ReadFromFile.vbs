@@ -8,3 +8,8 @@ Do While objFile.AtEndOfStream = False
 	strLine = objFile.ReadLine
 	WScript.Echo strLine
 Loop
+
+
+
+
+
