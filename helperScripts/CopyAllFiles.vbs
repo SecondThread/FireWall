@@ -1,4 +1,6 @@
-'Copy all files
+'Copies all files in the
+
+
 dim args : set args = WScript.Arguments
 
 Set objFSO = CreateObject("Scripting.FileSystemObject")
@@ -10,6 +12,6 @@ Do While objFile.AtEndOfStream = False
 	copyFrom = objFile.ReadLine
 	copyTo = objFile.ReadLine
 	
-	script.run("CopyFileFromInternet.vbs " & copyFrom & " " & copyTo)
+	script.run "helperScripts\CopyFileFromInternet.vbs " & copyFrom & " " & copyTo, 0, TRUE
 	
 Loop

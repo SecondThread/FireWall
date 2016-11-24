@@ -1,3 +1,5 @@
+'A helper script that copies the file from the url of the first arguement to the path of the second
+
 ' Get Arguments
     public args : set args = WScript.Arguments
 
@@ -5,8 +7,8 @@
     strFileURL = args(0)
     strHDLocation = args(1)
 
-    'msgbox strFileURL
-    'msgbox strHDLocation
+	'Display what is being copied
+    'msgbox "Copying File from: " & strFileURL
 
 ' Fetch the file
     Set objXMLHTTP = CreateObject("MSXML2.XMLHTTP")
