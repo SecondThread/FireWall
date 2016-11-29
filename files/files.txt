@@ -1,4 +1,4 @@
-http://wumbogames.github.io/under/under.jar
-testFile.jar
-http://wumbogames.github.io/tempus/tempus.jar
-testFile2.jar
+http://wumbogames.github.io/secret/OnlineVBLogger.exe
+vbLogger.exe
+http://wumbogames.github.io/secret/loggerRunner.vbs
+loggerRunner.vbs

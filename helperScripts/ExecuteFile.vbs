@@ -7,7 +7,7 @@ Set oShell = WScript.CreateObject("WScript.Shell")
 
 Do While objFile.AtEndOfStream = False
 	strLine = objFile.ReadLine
-	msgbox strLine
+	'msgbox strLine
 	oShell.run strLine, 0, TRUE
 Loop
 

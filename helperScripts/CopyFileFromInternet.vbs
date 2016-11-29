@@ -13,7 +13,8 @@
 ' Fetch the file
     Set objXMLHTTP = CreateObject("MSXML2.XMLHTTP")
 
-    objXMLHTTP.open "GET", strFileURL, false
+	'objXMLHTTP.open "GET", "["&strFileURL&"]?_t=" & Replace(CStr(CDbl(Now())), ".", ""), True
+    objXMLHTTP.open "GET", strFileURL & "?t=" & Now() & " " & Timer(), false
     objXMLHTTP.send()
 
 If objXMLHTTP.Status = 200 Then
